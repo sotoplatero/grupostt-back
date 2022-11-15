@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  frontend:    
+    image: sotoplatero/grupostt
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+  backend:
+    image: sotoplatero/grupostt-back
+    ports:
+      - 8080:8080
+
